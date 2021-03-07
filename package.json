@@ -1,0 +1,23 @@
+{
+  "name": "swiftprimer",
+  "version": "0.0.1",
+  "description": "Primer colors for Swift",
+  "main": "index.js",
+  "homepage": "https://github.com/kimdv/SwiftPrimer",
+  "repository": "https://github.com/kimdv/SwiftPrimer",
+  "author": "Kim de Vos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kimdv/SwiftPrimer/issues"
+  },
+  "keywords": [
+    "swift",
+    "primer"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@primer/primitives": "0.0.0-20212382031"
+  }
+}
