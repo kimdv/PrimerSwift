@@ -6,7 +6,8 @@ Info about the colors can be found [here](https://primer.style/css/support/color
 
 ## Install
 
-Just add 
+Add this repository to the `Package.swift` manifest of your project or in Xcode:
+
 ``` swift
 dependencies: [
     .package(url: "https://github.com/kimdv/PrimerSwift.git", .upToNextMajor(from: "0.1.0"))
