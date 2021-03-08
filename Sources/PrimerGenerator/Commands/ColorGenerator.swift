@@ -137,8 +137,8 @@ struct ColorGenerator: ParsableCommand {
                 return try [generateColorEnum(parentKey: "\(parentKey)/\(key)", dic: dic)]
             } else if let array = entry as? [String] {
                 return array.enumerated().map { element -> DeclBuildable in
-                    let key = "\(key)\(element.offset)"
-                    return PrimerVariable<VariableLetMutability>(key, of: "SwiftUI.Color", value: ColorLiteral("\(parentKey)/\(key)"))
+                    let combinedKey = "\(key)\(element.offset)"
+                    return PrimerVariable<VariableLetMutability>(combinedKey, of: "SwiftUI.Color", value: ColorLiteral("\(parentKey)/\(key)/\(combinedKey)"))
                 }
             } else {
                 throw GeneratorError(message: "Unknown entry: \(entry)")
